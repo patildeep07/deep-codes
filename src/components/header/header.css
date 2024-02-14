@@ -7,12 +7,15 @@
 
   padding: 25px 15%;
 
-  /* background-color: blue; */
-
+  position: fixed;
   position: -webkit-sticky;
-  position: sticky;
   top: 0;
-  mix-blend-mode: difference;
+  right: 0;
+  left: 0;
+
+  background-color: hsla(0, 0%, 0%, 0.05);
+
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);
 
   z-index: 10;
 }
@@ -28,25 +31,29 @@
 a {
   text-decoration: none;
   font-size: 20px;
-  color: rgb(0, 0, 0, 0.85);
+  color: rgba(0, 0, 0, 0.75);
 }
 
 a:hover {
-  color: rgba(0, 0, 0, 1);
+  color: #7c3aed;
 }
 
 .resume-btn {
-  background-color: #f6f6f6;
+  background-color: hsla(0, 0%, 0%, 0.05);
 
   padding: 10px 20px;
   border-radius: 25px;
 
   cursor: pointer;
 
-  border: 1px solid;
+  border: 2px solid;
+
+  font-weight: 700;
 }
 
 .resume-btn:hover {
-  background-color: black;
+  background-color: #7c3aed;
   color: #f6f6f6;
+
+  border: 2px solid #7c3aed;
 }

@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <>
       <header className="header">
-        <h2>Deep Patil</h2>
+        <h2 className="secondary">Deep Patil</h2>
 
         <nav className="web-menu">
           {menu.map((item) => {
@@ -18,7 +18,7 @@ const Header = () => {
             );
           })}
 
-          <button className="resume-btn">Resume</button>
+          <button className="resume-btn secondary">Resume</button>
         </nav>
       </header>
     </>

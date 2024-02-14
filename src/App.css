@@ -34,6 +34,14 @@ h6 {
   overflow-wrap: break-word;
 }
 
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
 img,
 picture,
 video,
@@ -44,3 +52,7 @@ svg {
 }
 
 /* GLOBAL CSS */
+
+.secondary {
+  color: #7c3aed;
+}

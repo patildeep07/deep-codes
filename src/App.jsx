@@ -1,6 +1,6 @@
 import "./App.css";
-import Header from "./sections/header/header";
-import LandingPage from "./sections/landingPage/landingPage";
+import Header from "./components/header/header";
+import LandingPage from "./components/landingPage/landingPage";
 
 function App() {
   return (
