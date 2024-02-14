@@ -2,18 +2,24 @@ import React from "react";
 import "./header.css";
 
 const Header = () => {
-  const menu = ["About", "Projects", "Experience", "Skills", ""];
+  const menu = ["About", "Work"];
 
   return (
     <>
       <header className="header">
         <h2>Deep Patil</h2>
 
-        <div className="web-menu">
+        <nav className="web-menu">
           {menu.map((item) => {
-            return <h3 key={item}>{item}</h3>;
+            return (
+              <a href={`#`} key={item}>
+                {item}
+              </a>
+            );
           })}
-        </div>
+
+          <button className="resume-btn">Resume</button>
+        </nav>
       </header>
     </>
   );

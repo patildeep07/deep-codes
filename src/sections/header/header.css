@@ -5,15 +5,48 @@
   align-items: center;
   justify-content: space-between;
 
-  padding: 5px 15px;
+  padding: 25px 15%;
 
-  background-color: blue;
+  /* background-color: blue; */
 
+  position: -webkit-sticky;
   position: sticky;
+  top: 0;
+  mix-blend-mode: difference;
+
+  z-index: 10;
 }
 
 .web-menu {
   display: flex;
-  gap: 10px;
+
+  align-items: center;
+  gap: 25px;
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(0, 0, 0, 0.85);
+}
+
+a:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.resume-btn {
+  background-color: #f6f6f6;
+
+  padding: 10px 20px;
+  border-radius: 25px;
+
+  cursor: pointer;
+
+  border: 1px solid;
+}
+
+.resume-btn:hover {
+  background-color: black;
+  color: #f6f6f6;
 }
