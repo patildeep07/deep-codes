@@ -1,14 +1,18 @@
 import "./App.css";
 import Header from "./components/header/header";
-import LandingPage from "./components/landingPage/landingPage";
+import { Routes, Route } from "react-router-dom";
+import About from "./pages/about/about";
+import Work from "./pages/work/work";
 
 function App() {
   return (
     <div className="App">
       <Header />
 
-      <LandingPage />
-      <h1>React app</h1>
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="/work" element={<Work />} />
+      </Routes>
     </div>
   );
 }

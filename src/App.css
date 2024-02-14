@@ -56,3 +56,15 @@ svg {
 .secondary {
   color: #7c3aed;
 }
+
+.pointer {
+  cursor: pointer;
+}
+
+/* FLEX */
+
+.flex-row {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}

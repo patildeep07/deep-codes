@@ -13,7 +13,12 @@ const LandingPage = () => {
             <Lottie animationData={coderAnimation} loop={true} />
           </div>
 
-          <h1 className="secondary">Hello world!</h1>
+          <p className="flex-row">
+            {"<h1>"}
+            <h1 className="secondary">Hello world!</h1>
+            {"</h1>"}
+          </p>
+
           <h2>I'm Deep, a full stack developer based in Mumbai.</h2>
         </div>
       </section>
