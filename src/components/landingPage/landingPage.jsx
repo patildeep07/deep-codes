@@ -9,17 +9,19 @@ const LandingPage = () => {
     <>
       <section className="landing-section">
         <div className="landing-content">
-          <div className="lottie-container">
+          <div className="lottie-container zoom-effect">
             <Lottie animationData={coderAnimation} loop={true} />
           </div>
 
-          <p className="flex-row">
-            {"<h1>"}
-            <h1 className="secondary">Hello world!</h1>
-            {"</h1>"}
-          </p>
+          <div className="text-container">
+            <h1 className="secondary ease-in">Hello world!</h1>
+          </div>
 
-          <h2>I'm Deep, a full stack developer based in Mumbai.</h2>
+          <div className="text-container">
+            <h2 className="typewritter">
+              I'm Deep, a full stack developer based in Mumbai.
+            </h2>
+          </div>
         </div>
       </section>
     </>

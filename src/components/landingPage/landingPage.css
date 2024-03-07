@@ -35,3 +35,91 @@
   height: 50vh;
   width: 60%;
 }
+
+/* Lottie zoom */
+
+.zoom-effect {
+  animation: zooming-effect 5s infinite;
+}
+
+/* Ease in */
+
+.ease-in {
+  overflow: hidden;
+  /* visibility: hidden; */
+
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.1em;
+
+  animation: typing 1.5s steps(40, end) forwards;
+}
+
+/* Text */
+
+.text-container {
+  display: inline-block;
+}
+
+.typewritter {
+  overflow: hidden;
+  visibility: hidden;
+  border-right: 0.15em solid blueviolet;
+
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.1em;
+
+  animation: typing 3.5s steps(40, end) forwards,
+    blinking-cursor 0.75s step-end infinite;
+
+  animation-delay: 2s;
+}
+
+/* Animations */
+
+@keyframes zooming-effect {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pop-up {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+    visibility: visible;
+  }
+
+  to {
+    width: 100%;
+    visibility: visible;
+  }
+}
+
+@keyframes blinking-cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: blueviolet;
+  }
+}
